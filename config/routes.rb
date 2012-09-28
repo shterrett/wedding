@@ -1,7 +1,10 @@
 Wedding::Application.routes.draw do
-  get "attendee/create"
 
-  get "attendee/index"
+  get "static_pages/home"
+
+  resources :attendees
+  
+  root to: "static_pages#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
