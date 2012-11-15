@@ -1,0 +1,141 @@
+
+/* defaults - copied from BorderRadius demo site (codeschool.com) */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset,img { border: 0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style: normal; font-weight: normal; }
+ol,ul { list-style: none; }
+caption,th { text-align: left; }
+h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: normal; }
+q:before,q:after { content: ''; }
+abbr,acronym { border: 0; }
+a { outline: none; text-decoration: none; }
+a:visited { outline: none; text-decoration: none; color: grey; }
+a img { border: none; }
+.clear { clear: both; font-size: 1px; line-height: 1px; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.texthide { text-indent: -9999em; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display:block;
+}
+
+
+/* styles */
+body {
+	background: #b5bdc8; /* Old browsers */
+	background: url("/assets/grey-bkgrnd-2.jpg");
+	font-family: sans-serif;
+}
+
+.main-header {
+	text-align: center;
+	margin-bottom: 5%;
+	color: rgba(255, 245, 102, 1);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+}
+.name {
+ 	font-size: 250%;
+	display: inline;
+	padding-bottom: 100%;
+}
+
+.wedding {
+	font-size: 500%;
+	display: inline;
+}
+
+.main-nav {
+padding-top: 5%;
+padding-bottom: 5%;
+}
+
+.main-nav a {
+display: inline;
+padding: 2%;
+margin: 0 1%;
+border: 1px solid rgba(255, 245, 102, 1);
+background: rgba(255, 245, 102, 1);
+border-radius: 6px;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+text-shadow: none;
+}
+
+.main-nav a:hover {
+background: #fefcea; /* Old browsers */
+background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f1da36)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* IE10+ */
+background: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+}
+
+.main {
+text-align: center;
+font-size: 175%;
+margin-bottom: 5%;
+color: rgba(163, 163, 163, 1);
+}
+
+.container {
+width: 75%;
+background: rgba(255, 242, 102, 1);
+margin: 0 auto;
+height: auto;
+overflow: hidden;
+}
+
+#time {
+float: left;
+text-align: left;
+width: 50%;
+margin-top: 5%;
+font-size: 200%;
+margin-left: 2%;
+}
+
+#date{
+margin-left: auto;
+width: 50%;
+}
+
+#day {
+font-size: 500%;
+float: left;
+}
+
+#month {
+float:right;
+margin-right: 10%;
+font-size: 200%;
+}
+
+#year {
+font-size: 200%;
+text-align: right;
+}
+
+
+#pink-house {
+margin: 5%;
+font-size: 200%;
+}
+
+#address {
+margin: 2%;
+margin-top: 10%;
+text-align: center;
+float: left;
+}
+
+#where a {
+border-bottom: 1px dotted rgba(163, 163, 163, 1);
+}
+
+#pink-house-image {
+float: right;
+margin: 2%;
+}
