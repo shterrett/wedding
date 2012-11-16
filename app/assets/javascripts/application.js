@@ -14,34 +14,34 @@
 //= require jquery_ujs
 //= require_tree .
 
-function dynamicAddRemove(invitation, invitations, attendee, attendees) {
-  $('a.' + attendee + '-add').live('click', function() {
-    var invitationId = $(this).closest('.' + attendees).attr('id').replace(invitation + '-', '');
+function dynamicAddRemove(parent, parents, child, children) {
+  $('a.' + child + '-add').live('click', function() {
+    var parentId = $(this).closest('.' + children).attr('id').replace(parent + '-', '');
     indexData = ''
-    // check to see if there is a invitation div; this will be the case if we're doing a
-    // grandattendee (or deeper) insert
-    if ($(this).closest('div.' + invitation).size() > 0) {
-      var matcher = new RegExp (invitations + '_attributes\\]\\[(\\d*)\\]');
-      var invitationIndex = $(this).closest('div.' + invitation).find(':input').attr('name').match(matcher)[1];
-      indexData = 'index=' + invitationIndex;
+    // check to see if there is a parent div; this will be the case if we're doing a
+    // grandchild (or deeper) insert
+    if ($(this).closest('div.' + parent).size() > 0) {
+      var matcher = new RegExp (parents + '_attributes\\]\\[(\\d*)\\]');
+      var parentIndex = $(this).closest('div.' + parent).find(':input').attr('name').match(matcher)[1];
+      indexData = 'index=' + parentIndex;
     }
-    $.get('/' + invitations + '/' + invitationId + '/' + attendees + '/new', indexData, function(data) {
-      $(data).hide().appendTo($('div.' + attendees + '#' + invitation + '-' + invitationId + ' div#new-' + attendees)).fadeIn('slow');
+    $.get('/' + parents + '/' + parentId + '/' + children + '/new', indexData, function(data) {
+      $(data).hide().appendTo($('div.' + children + '#' + parent + '-' + parentId + ' div#new-' + children)).fadeIn('slow');
     });
     return false;
   });
 
-  $('a.' + attendee + '-remove').live('click', function() {
-    var attendeeId = $(this).closest('.' + attendee).attr('id');
-    var invitationId = $(this).closest('.' + attendees).attr('id').replace(invitation + '-', '');
-    $.post('/' + invitations + '/' + invitationId + '/' + attendees + '/' + attendeeId, { _method: 'delete' }, function(data, textStatus) {
+  $('a.' + child + '-remove').live('click', function() {
+    var childId = $(this).closest('.' + child).attr('id');
+    var parentId = $(this).closest('.' + children).attr('id').replace(parent + '-', '');
+    $.post('/' + parents + '/' + parentId + '/' + children + '/' + childId, { _method: 'delete' }, function(data, textStatus) {
       var response = JSON.parse(data);
       if (response.success) {
-        $('div.' + attendee + '#' + attendeeId).fadeOut('slow', function() {
+        $('div.' + child + '#' + childId).fadeOut('slow', function() {
           $(this).remove();
         });
       } else {
-        alert('The ' + attendee + ' could not be removed because ' + response.msg);
+        alert('The ' + child + ' could not be removed because ' + response.msg);
       }
     });
     return false;

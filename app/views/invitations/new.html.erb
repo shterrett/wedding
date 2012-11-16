@@ -1,5 +1,7 @@
 <div class="container">
 <div class="invitations">
+	
+	<h1><%= @invitation.id %></h1>
 
 	<%= form_for @invitation do |invitation_form| %>
 	<%= invitation_form.label :principal_name %>
@@ -17,7 +19,7 @@
 	<%= invitation_form.label :zip %>
 	<%= invitation_form.text_field :zip %>
 
-		<div class="attendees" id='invitation-<%= @invitation.id %>'>
+		<div class="attendees" id="invitation-<%= @invitation.id %>">
 			<h2>Attendees</h2>
 			<% invitation_form.fields_for :attendees do |attendee_form| %>
 			<%= render 'attendees/form', :locals => { :f => attendee_form, :attendee => attendee_form.object } %>
@@ -43,4 +45,3 @@ $(document).ready(function() {
 
 
 
-<!-- :city, :principal_name, :state, :street_address, :zip -->

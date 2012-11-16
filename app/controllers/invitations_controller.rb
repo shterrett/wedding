@@ -1,6 +1,6 @@
 class InvitationsController < ApplicationController
   def new
-    @invitation = Invitation.new
+    @invitation = Invitation.create
   end
   
   def create
