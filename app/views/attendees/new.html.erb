@@ -1,14 +1,3 @@
-<% provide(:title, 'New RSVP') %>
-
-<%= form_for @attendee do |f| %>
-
-<%= f.label :name %>
-<%= f.text_field :name %>
-
-<%= f.label :email %>
-<%= f.email_field :email %>
-
-<%= f.label :vegetarian %>
-<%= f.select :vegetarian, {"I like eating tasty animals" => false, "Eww - nothing with eyes!" => true } %>
-
+<% fields_for 'invitation[attendee_attributes][]', @attendee do |attendee_form| %>
+<%= render 'form', :locals => { :f => attendee_form, :attendee => @attendee } %>
 <% end %>

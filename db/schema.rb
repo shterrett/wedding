@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120928024624) do
+ActiveRecord::Schema.define(:version => 20121115120538) do
 
   create_table "attendees", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -19,6 +19,16 @@ ActiveRecord::Schema.define(:version => 20120928024624) do
     t.string   "name"
     t.string   "email"
     t.boolean  "vegetarian"
+  end
+
+  create_table "invitations", :force => true do |t|
+    t.string   "principal_name"
+    t.string   "street_address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
 end

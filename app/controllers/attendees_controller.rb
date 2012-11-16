@@ -1,19 +1,21 @@
 class AttendeesController < ApplicationController
   
   def new
-    @attendee = Attendee.new
+    invitation = Invitation.find(params[:invitation_id])
+    @attendee = invitation.attendee.create
+    new_attendee_form = render_to_string, :layout => false
+    new_attendee_form.gsub!("[#{@attendee.id}]", "[#{Time.now.to_i}]")
+    render :text => new_attendee_form, :layout => false
   end
   
-  def create
-    @attendee = Attendee.new(params[:attendee])
-    if @attendee.save
-      flash[:success] = "Your RSVP has been logged successfully"
-      redirect_to new_attendee_path
-    else
-      render 'new'
+  def destroy
+    invitation = Invitation.find(params[:invitation_id])
+    unless invitation.attendee.exists?(params[:id])
+      render :text => { :success => false, :msg => "the child was not found." }.to_json and return
     end
-  end
-
-  def index
-  end
+    if invitation.attendee.destroy(params[:id])
+      render :text => { :success => true }.to_json
+    else
+      render :text => { :success => false, :msg => "something unexpected happened." }.to_json
+    end
 end

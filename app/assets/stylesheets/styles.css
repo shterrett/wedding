@@ -10,8 +10,8 @@ caption,th { text-align: left; }
 h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: normal; }
 q:before,q:after { content: ''; }
 abbr,acronym { border: 0; }
-a { outline: none; text-decoration: none; }
-a:visited { outline: none; text-decoration: none; color: grey; }
+a { outline: none; color: rgba(163, 163, 163, 1); text-decoration: underline; text-decoration-color: rgba(163, 163, 163, 1); }
+a:visited { outline: none; text-decoration: underline; text-decoration-color: grey; color: grey; }
 a img { border: none; }
 .clear { clear: both; font-size: 1px; line-height: 1px; overflow: hidden; visibility: hidden; width: 0; height: 0; }
 .texthide { text-indent: -9999em; }
@@ -52,6 +52,7 @@ padding-bottom: 5%;
 }
 
 .main-nav a {
+text-decoration: none;
 display: inline;
 padding: 2%;
 margin: 0 1%;
@@ -131,11 +132,22 @@ text-align: center;
 float: left;
 }
 
-#where a {
-border-bottom: 1px dotted rgba(163, 163, 163, 1);
-}
-
 #pink-house-image {
 float: right;
 margin: 2%;
+}
+
+#registry p {
+width: 55%;
+padding: 0;
+margin: 4% auto;
+}
+
+iframe {
+width: 95%;
+min-height: 250%;
+}
+
+.invitations {
+text-align: center;
 }

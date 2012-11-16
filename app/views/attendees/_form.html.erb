@@ -1,0 +1,21 @@
+<%# 
+	locals: 
+		f - form context
+		attendee - attendee to be displayed
+%>
+
+<div class='attendee' id'<%= attendee.id %>'>
+	<h3>Atendee</h3>
+	<%= f.hidden_field :id %>
+	
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+	
+	<%= f.label :vegetarian %>
+	<%= f.checkbox :vegetarian %>
+	<p><a href='#' class='attendee-remove'>Remove the above atendee</a></p>
+</div>
+		

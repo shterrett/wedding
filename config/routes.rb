@@ -3,6 +3,9 @@ Wedding::Application.routes.draw do
   get "static_pages/home"
 
   resources :attendees
+  resources :invitations
+  
+  resources :invitations, :has_many => :attendees
   
   root to: "static_pages#home"
 

@@ -1,0 +1,46 @@
+<div class="container">
+<div class="invitations">
+
+	<%= form_for @invitation do |invitation_form| %>
+	<%= invitation_form.label :principal_name %>
+	<%= invitation_form.text_field :principal_name %>
+	
+	<%= invitation_form.label :street_address %>
+	<%= invitation_form.text_field :street_address %>
+
+	<%= invitation_form.label :city %>
+	<%= invitation_form.text_field :city %>
+
+	<%= invitation_form.label :state %>
+	<%= invitation_form.text_field :state %>
+	
+	<%= invitation_form.label :zip %>
+	<%= invitation_form.text_field :zip %>
+
+		<div class="attendees" id='invitation-<%= @invitation.id %>'>
+			<h2>Attendees</h2>
+			<% invitation_form.fields_for :attendees do |attendee_form| %>
+			<%= render 'attendees/form', :locals => { :f => attendee_form, :attendee => attendee_form.object } %>
+			<% end %>
+		<div id='new-attendee'></div>	
+		<p><a href='#' class='attendee-add'>Add an Attendee</a></p>
+		</div>
+	<%= invitation_form.submit %>
+<% end %> 
+</div>
+</div>
+
+
+
+
+
+
+<script>
+$(document).ready(function() {
+	dynamicAddRemove('invitation', 'invitations', 'attendee', 'attendees');
+})
+</script>
+
+
+
+<!-- :city, :principal_name, :state, :street_address, :zip -->
