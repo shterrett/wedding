@@ -2,10 +2,10 @@ class AttendeesController < ApplicationController
   
   def new
     invitation = Invitation.find(params[:invitation_id])
-    @attendee = invitation.attendee.create
-    new_attendee_form = render_to_string, :layout => false
+    @attendee = invitation.attendees.create
+    new_attendee_form = render_to_string(:layout => false)
     new_attendee_form.gsub!("[#{@attendee.id}]", "[#{Time.now.to_i}]")
-    render :text => new_attendee_form, :layout => false
+    render :text => new_attendee_form
   end
   
   def destroy
@@ -18,4 +18,6 @@ class AttendeesController < ApplicationController
     else
       render :text => { :success => false, :msg => "something unexpected happened." }.to_json
     end
+  end
+  
 end
