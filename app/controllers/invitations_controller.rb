@@ -3,13 +3,18 @@ class InvitationsController < ApplicationController
     @invitation = Invitation.create
   end
   
-  def create
-    @invitation = Invitation.new(params[:invitation])
-    if @invitation.save
+  def show
+    @invitation = Invitation.find(params[:id])
+  end
+  
+  def update
+    @invitation = Invitation.find(params[:id])
+    if @invitation.update_attributes(params[:invitation])
       flash[:success] = "Invitation created successfully"
-      redirect_to new_invitation_path
+      redirect_to invitation_path(@invitation)
     else
-      render 'new'
+      flash[:error] = params
+      redirect_to "/"
     end
   end
 

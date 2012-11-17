@@ -7,7 +7,10 @@ Wedding::Application.routes.draw do
     resources :attendees
   end
   
-  
+  match 'how/music', to: "static_pages#music", as: "music"
+  match 'how/menu', to: "static_pages#menu", as: "menu"
+  match 'how/dress', to: "static_pages#dress", as: "dress"
+  match 'how/hotels', to: "static_pages#hotels", as: "hotels"
   
   root to: "static_pages#home"
 

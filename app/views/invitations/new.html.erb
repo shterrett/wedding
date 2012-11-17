@@ -1,7 +1,10 @@
+<section class="main">
 <div class="container">
 <div class="invitations">
 	
-	<h1><%= @invitation.id %></h1>
+	<header>
+		<h1>Create an Invitation</h1>
+	</header>
 
 	<%= form_for @invitation do |invitation_form| %>
 	<%= invitation_form.label :principal_name %>
@@ -24,14 +27,14 @@
 			<% invitation_form.fields_for :attendees do |attendee_form| %>
 			<%= render 'attendees/form', :locals => { :f => attendee_form, :attendee => attendee_form.object } %>
 			<% end %>
-		<div id='new-attendee'></div>	
+		<div id='new-attendees'></div>	
 		<p><a href='#' class='attendee-add'>Add an Attendee</a></p>
 		</div>
 	<%= invitation_form.submit %>
 <% end %> 
 </div>
 </div>
-
+</section>
 
 
 

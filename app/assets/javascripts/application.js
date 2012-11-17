@@ -26,7 +26,7 @@ function dynamicAddRemove(parent, parents, child, children) {
       indexData = 'index=' + parentIndex;
     }
     $.get('/' + parents + '/' + parentId + '/' + children + '/new', indexData, function(data) {
-      $(data).hide().appendTo($('div.' + children + '#' + parent + '-' + parentId + ' div#new-' + children)).fadeIn('slow');
+      $(data).hide().appendTo($('div#new-' + children)).fadeIn('slow');
     });
     return false;
   });
@@ -47,3 +47,5 @@ function dynamicAddRemove(parent, parents, child, children) {
     return false;
   });
 }
+
+//div.' + children + '#' + parent + '-' + parentId + ' 

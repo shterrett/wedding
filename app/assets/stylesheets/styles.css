@@ -26,7 +26,8 @@ display:block;
 body {
 	background: #b5bdc8; /* Old browsers */
 	background: url("/assets/grey-bkgrnd-2.jpg");
-	font-family: sans-serif;
+	font-family: 'Poiret One', sans-serif;
+	color: rgba(163, 163, 163, 1);
 }
 
 .main-header {
@@ -78,7 +79,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
 text-align: center;
 font-size: 175%;
 margin-bottom: 5%;
-color: rgba(163, 163, 163, 1);
 }
 
 .container {
@@ -88,6 +88,8 @@ margin: 0 auto;
 height: auto;
 overflow: hidden;
 }
+
+
 
 #time {
 float: left;
@@ -150,4 +152,17 @@ min-height: 250%;
 
 .invitations {
 text-align: center;
+}
+
+form {
+margin: 5% 0;
+}
+
+input {
+display: block;
+margin: auto;
+}
+
+input[type=submit]{
+margin: 2% auto;
 }

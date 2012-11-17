@@ -4,7 +4,7 @@
 		attendee - attendee to be displayed
 %>
 
-<div class='attendee' id'<%= attendee.id %>'>
+<div class='attendee' id='<%= attendee.id %>'>
 	<h3>Attendee</h3>
 	<%= f.hidden_field :id %>
 	
@@ -15,7 +15,7 @@
 	<%= f.text_field :email %>
 	
 	<%= f.label :vegetarian %>
-	<%= f.check_box :vegetarian %>
+	<%= f.check_box :vegetarian, {}, true, false %>
 	<p><a href='#' class='attendee-remove'>Remove the above atendee</a></p>
 </div>
 		
