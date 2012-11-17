@@ -166,3 +166,15 @@ margin: auto;
 input[type=submit]{
 margin: 2% auto;
 }
+
+.attendees h2, .attendees h3 {
+margin: 2% auto;
+}
+
+.attendees a {
+font-size: 75%;
+}
+
+aside {
+font-size: 35%;
+}
