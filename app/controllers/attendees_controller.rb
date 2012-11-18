@@ -20,4 +20,7 @@ class AttendeesController < ApplicationController
     end
   end
   
+  def index
+    @attendees = Attendee.where('name IS NOT NULL').order_by(:name)
+  end
 end

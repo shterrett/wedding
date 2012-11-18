@@ -29,11 +29,13 @@ body {
 	font-family: 'Poiret One', sans-serif;
 	color: rgba(163, 163, 163, 1);
 }
+
 .flash {
 display: block;
 margin: 2% auto;
 width: 50%;
 }
+
 .flash p {
 text-align: center;
 }
@@ -44,6 +46,16 @@ color: red;
 .success {
 color: yellow;
 }
+
+#initial {
+margin: 5% auto;
+}
+
+#initial img {
+display: block;
+margin: 5% auto;
+}
+
 .main-header {
 	text-align: center;
 	margin-bottom: 5%;
@@ -196,4 +208,10 @@ font-size: 75%;
 
 aside {
 font-size: 35%;
+}
+
+.music img {
+margin: 2% auto;
+display: block;
+max-width: 85%;
 }
