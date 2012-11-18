@@ -1,5 +1,43 @@
 <section class="main">
 	<div class="container">
-		<%= @invitation.principal_name %>
+		<header>
+			<hgroup>
+				<h1><%= @invitation.principal_name %></h1>
+				<h2>Please RSVP</h2>
+			</hgroup>
+		</header>
+		<p>Please check your email address(es) below, use the checkboxes to indicate whether you are attending and your meal preference, and leave a comment if you would like.
+		<p>
+	</div>
+</section>
+
+
+
+
+<section class="main">
+	<div class="container">
+		
+		<%= form_for @invitation do |f| %>
+		<%= f.fields_for :attendees do |form| %>
+		<header>
+			<h1><%= form.object.name %></h1>
+		</header>
+		<p>
+			<%= form.label :attending %>
+			<%= form.check_box :attending, {}, true, false %>
+			
+			<%= form.label :email %>
+			<%= form.text_field :email %>
+	
+			<%= form.label :vegetarian %>
+			<%= form.check_box :vegetarian, {}, true, false %>
+			
+			<%= form.label :message %>
+			<%= form.text_area :message %>
+		</p>
+			
+		<% end %>
+			<%= f.submit %>
+		<% end %>
 	</div>
 </section>

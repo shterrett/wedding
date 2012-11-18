@@ -5,6 +5,7 @@ class InvitationsController < ApplicationController
   
   def show
     @invitation = Invitation.find(params[:id])
+    @attendees = @invitation.attendees.order(:name)
   end
   
   def update
@@ -19,6 +20,7 @@ class InvitationsController < ApplicationController
   end
 
   def index
+    @invitations = Invitation.search(params[:search])
   end
   
 end

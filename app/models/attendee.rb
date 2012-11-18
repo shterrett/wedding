@@ -1,6 +1,6 @@
 class Attendee < ActiveRecord::Base
   
-  attr_accessible :name, :email, :vegetarian
+  attr_accessible :name, :email, :vegetarian, :attending, :message
   
   # validates :name, :email, :vegetarian, presence: true, on: :update
   

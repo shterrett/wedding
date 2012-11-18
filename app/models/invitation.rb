@@ -5,4 +5,12 @@ class Invitation < ActiveRecord::Base
   
   has_many :attendees
   accepts_nested_attributes_for :attendees
+  
+  def self.search(search)
+    if search
+      Invitation.where('principal_name LIKE ?', "%#{search}%").order(:principal_name)
+    else
+      Invitation.where('principal_name IS NOT NULL').order(:principal_name)
+    end
+  end
 end
