@@ -48,4 +48,3 @@ function dynamicAddRemove(parent, parents, child, children) {
   });
 }
 
-//div.' + children + '#' + parent + '-' + parentId + ' 
