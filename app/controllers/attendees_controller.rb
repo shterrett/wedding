@@ -20,4 +20,9 @@ class AttendeesController < ApplicationController
     end
   end
   
+  def index
+    @attendees = Attendee.where('name IS NOT NULL').order_by(:name)
+  end
 end
+
+#adding text so git will notice changes

@@ -21,19 +21,20 @@ footer, header, hgroup, menu, nav, section {
 display:block;
 }
 
-
 /* styles */
 body {
 	background: #b5bdc8; /* Old browsers */
-	background: url("/assets/grey-bkgrnd-2.jpg");
+	background: url("/assets/chevron.jpg");
 	font-family: 'Poiret One', sans-serif;
-	color: rgba(163, 163, 163, 1);
+	color: rgba(140, 140, 140, 1);
 }
+
 .flash {
 display: block;
 margin: 2% auto;
 width: 50%;
 }
+
 .flash p {
 text-align: center;
 }
@@ -44,21 +45,35 @@ color: red;
 .success {
 color: yellow;
 }
+
+#initial {
+margin: 5% auto;
+}
+
+#initial img {
+display: block;
+margin: 5% auto;
+}
+
 .main-header {
 	text-align: center;
 	margin-bottom: 5%;
 	color: rgba(255, 245, 102, 1);
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+	text-shadow: 3px 3px 2px rgba(0, 0, 0, .8);
 }
 .name {
  	font-size: 250%;
+	font-weight: 800;
 	display: inline;
 	padding-bottom: 100%;
+	margin: 0 2%;
+	text-shadow: 5px, 5px, 2px, rgba(0, 0, 0, 1);
 }
 
 .wedding {
 	font-size: 500%;
 	display: inline;
+	margin: 0;
 }
 
 .main-nav {
@@ -106,6 +121,8 @@ background: rgba(255, 242, 102, 1);
 margin: 0 auto;
 height: auto;
 overflow: hidden;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+border: 2px double rgba(0, 0, 0, .8);
 }
 
 #time {
@@ -206,6 +223,12 @@ font-size: 35%;
 	}
 }
 
+.music img {
+margin: 2% auto;
+display: block;
+max-width: 85%;
+}
+
 @media screen and (max-width: 900px) {
 	#address{
 		display: block;
@@ -246,6 +269,3 @@ font-size: 35%;
 		margin: 0 auto;
 		padding-bottom: 0;
 	}
-
-	
-}

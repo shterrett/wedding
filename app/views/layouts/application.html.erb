@@ -16,10 +16,10 @@
 			<h2 class="name">Stuart</h2>
 		</hgroup>
 		<nav class="main-nav">
-				<%= link_to "When", root_path(anchor: "when") %>
-				<%= link_to "Where", root_path(anchor: "where") %>
-				<%= link_to "How", root_path(anchor: "how") %>
-				<%= link_to "Registry", root_path(anchor: "registry") %>
+				<%= link_to "When", root_path(anchor: "when"), id: 'when-link' %>
+				<%= link_to "Where", root_path(anchor: "where"), id: 'where-link' %>
+				<%= link_to "How", root_path(anchor: "how"), id: 'how-link' %>
+				<%= link_to "Registry", root_path(anchor: "registry"), id: 'registry-link' %>
 				<%= link_to "RSVP", invitations_path %>
 		</nav>
 	</header>

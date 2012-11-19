@@ -7,6 +7,9 @@
 	</header>
 
 	<%= form_for @invitation do |invitation_form| %>
+	<%= invitation_form.label :honorific %>
+	<%= invitation_form.text_field :honorific %>
+	
 	<%= invitation_form.label :principal_name %>
 	<%= invitation_form.text_field :principal_name %>
 	
