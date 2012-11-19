@@ -108,8 +108,6 @@ height: auto;
 overflow: hidden;
 }
 
-
-
 #time {
 float: left;
 text-align: left;
@@ -130,14 +128,17 @@ float: left;
 }
 
 #month {
-float:right;
-margin-right: 10%;
+float:left;
+margin: 5% 2% 0 8%;
 font-size: 200%;
 }
 
 #year {
+float: right;
 font-size: 200%;
 text-align: right;
+margin-top: 5%;
+margin-right: 2%;
 }
 
 
@@ -196,4 +197,55 @@ font-size: 75%;
 
 aside {
 font-size: 35%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1120px) {
+	#month {
+		float: right;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#address{
+		display: block;
+		float: none;
+	}
+	#where img {
+		float: none;
+		display: block;
+		margin: 5% auto;
+	}
+	#where a {
+		display: block;
+	}
+	#day, #month, #year, #time, #date {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	iframe{
+		display: none;
+	}
+	#how a, .main-nav a {
+		display: block;
+		float: none;
+		margin: 2% auto;
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.name {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		padding-bottom: 0;
+	}
+
+	
 }
