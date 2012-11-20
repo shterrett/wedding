@@ -220,7 +220,7 @@ font-size: 35%;
 }
 
 /* Media Queries */
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1120pt) {
 	#month {
 		float: right;
 	}
@@ -232,7 +232,7 @@ display: block;
 max-width: 85%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900pt) {
 	#address{
 		display: block;
 		float: none;
@@ -253,7 +253,7 @@ max-width: 85%;
 	}
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 670pt) {
 	iframe{
 		display: none;
 	}
@@ -265,7 +265,7 @@ max-width: 85%;
 	}
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 510pt) {
 	.name {
 		display: block;
 		float: none;
