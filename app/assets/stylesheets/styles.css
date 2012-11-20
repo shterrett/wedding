@@ -26,6 +26,7 @@ body {
 	background: #b5bdc8; /* Old browsers */
 	background: url("/assets/chevron.jpg");
 	font-family: 'Poiret One', sans-serif;
+	color: #b5bdc8; /* Old browsers */
 	color: rgba(140, 140, 140, 1);
 }
 
@@ -87,6 +88,7 @@ display: inline;
 padding: 2%;
 margin: 0 1%;
 border: 2px double rgba(0, 0, 0, .8);
+background: #FFF566; /* Old browsers */
 background: rgba(255, 245, 102, 1);
 border-radius: 6px;
 box-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
@@ -117,7 +119,8 @@ margin: 2% auto;
 
 .container {
 width: 75%;
-background: rgba(255, 242, 102, 1);
+background: #FFF566; /* Old browsers */
+background: rgba(255, 242, 102, .75);
 margin: 0 auto;
 height: auto;
 overflow: hidden;

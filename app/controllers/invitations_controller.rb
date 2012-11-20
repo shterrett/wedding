@@ -1,4 +1,5 @@
 class InvitationsController < ApplicationController
+  before_filter :ip_protect, on: :new
   def new
     @invitation = Invitation.create
   end
