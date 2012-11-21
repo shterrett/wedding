@@ -21,7 +21,14 @@ class AttendeesController < ApplicationController
   end
   
   def index
-    @attendees = Attendee.where('name IS NOT NULL').order_by(:name)
+    @attendees = Attendee.where("name IS NOT NULL").order(:name)
+    @number_attending = Attendee.where(attending: true).length
+    @number_vegetarian = Attendee.where(vegetarian: true).length
+  end
+  
+  def show
+    @attendee = Attendee.find(params[:id])
+    @invitation = @attendee.invitation
   end
 end
 
