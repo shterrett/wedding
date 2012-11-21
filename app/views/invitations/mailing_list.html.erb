@@ -1,0 +1,27 @@
+<section class="main">
+	<div class="container">
+		<header>
+			<h1>Mailing List</h1>
+		</header>
+		<table class="mailing-list">
+			<tr>
+				<th>Honorific:</th>
+				<th>Principal Name:</th>
+				<th>Street Address:</th>
+				<th>City:</th>
+				<th>State:</th>
+				<th>Zip:</th>
+			</tr>
+			<% @invitations.each do |inv| %>
+			<tr>
+				<td><%= inv.honorific %></td>
+				<td><%= inv.principal_name %></td>
+				<td><%= inv.street_address %></td>
+				<td><%= inv.city %></td>
+				<td><%= inv.state %></td>
+				<td><%= inv.zip %></td>
+			</tr>
+			<% end %>
+		</table>
+	</div>
+</section>

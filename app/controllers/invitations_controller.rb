@@ -25,4 +25,7 @@ class InvitationsController < ApplicationController
     @invitations = Invitation.search(params[:search])
   end
   
+  def mailing_list
+    @invitations = Invitation.where("principal_name IS NOT NULL")
+  end
 end

@@ -10,8 +10,11 @@
 		<ul>
 			<% @attendees.each do |atnd| %>
 			<% atnd.attending ? is_atnd = "attending" : is_atnd = "not_attending" %>
-			<% atnd.vegetarian ? is_veg = "vegetarian" : is_veg = ""%>
-			<li class="<%= is_atnd %>"><%= link_to atnd.name, attendee_path(atnd) %><span class="<%= is_veg %>" /></li>
+			<% atnd.vegetarian ? is_veg = "broccoli.jpeg" : is_veg = ""%>
+			<li class="<%= is_atnd %>"><%= link_to atnd.name, attendee_path(atnd) %> 
+				<% if atnd.vegetarian %>
+					<%= image_tag "broccoli.jpg", options = { alt: "I'm a vegetarian" } %></li>
+				<% end %>
 			<% end %>
 		</ul>
 	</div>

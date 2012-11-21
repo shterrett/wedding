@@ -42,6 +42,10 @@ hgroup h2 {
 	font-size: 95%;
 }
 
+ul { 
+	margin-bottom: 2%;
+}
+
 .flash {
 display: block;
 margin: 2% auto;
@@ -258,6 +262,37 @@ font-size: 35%;
 
 .rsvp_message {
 	width: 50%;
+}
+
+.mailing-list {
+	text-align: left;
+	font-size: 65%;
+	margin: 2% auto;
+}
+
+.mailing-list th {
+	font-size: 115%;
+	padding-bottom: 2%;
+}
+
+.mailing-list tr td:nth-child(1) {
+	width: 7em;
+}
+
+.mailing-list tr td:nth-child(2) {
+	width: 10em;
+}
+
+.mailing-list tr td:nth-child(3) {
+	width: 12em;
+}
+
+.mailing-list tr td:nth-child(4) {
+	width: 8em;
+}
+
+.mailing-list tr td:nth-child(5) {
+	width: 5em;
 }
 
 /* Media Queries */

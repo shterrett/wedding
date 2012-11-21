@@ -7,6 +7,8 @@ Wedding::Application.routes.draw do
     resources :attendees
   end
   
+  match 'admin/mailing_list', to: "invitations#mailing_list", as: "mailing_list"
+  
   match 'how/music', to: "static_pages#music", as: "music"
   match 'how/menu', to: "static_pages#menu", as: "menu"
   match 'how/dress', to: "static_pages#dress", as: "dress"
