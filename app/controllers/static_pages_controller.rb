@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  before_filter :authenticate, only: :admin
   def home
   end
   
@@ -9,5 +10,8 @@ class StaticPagesController < ApplicationController
   end
   
   def dress
+  end
+  
+  def admin
   end
 end

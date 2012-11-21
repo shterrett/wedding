@@ -1,4 +1,5 @@
 class AttendeesController < ApplicationController
+  before_filter :authenticate, only: [ :index, :show ]
   
   def new
     invitation = Invitation.find(params[:invitation_id])

@@ -1,13 +1,11 @@
 class ApplicationController < ActionController::Base
+  include ApplicationHelper
   protect_from_forgery
   
-  def ip_protect
-    if Rails.env.production? 
-      @ip = "76.19.119.28"
-      unless @ip == request.remote_ip
-        flash[:error] = "You are not authorized"
-        redirect_to root_path
+  protected
+      def authenticate
+        authenticate_or_request_with_http_basic do |username, password|
+          username == "tergas" && password == "1Houdini!"
+        end
       end
-    end
-  end
 end

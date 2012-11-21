@@ -1,5 +1,5 @@
 class InvitationsController < ApplicationController
-  before_filter :ip_protect, on: :new
+  before_filter :authenticate, only: :new
   def new
     @invitation = Invitation.create
   end
@@ -11,12 +11,13 @@ class InvitationsController < ApplicationController
   
   def update
     @invitation = Invitation.find(params[:id])
+    redirect_path = ( logged_in? ? new_invitation_path : root_path )
     if @invitation.update_attributes(params[:invitation])
       flash[:success] = "Invitation created successfully"
-      redirect_to invitation_path(@invitation)
+      redirect_to redirect_path
     else
-      flash[:error] = params
-      redirect_to "/"
+      flash[:error] = params      
+      redirect_to redirect_path
     end
   end
 
