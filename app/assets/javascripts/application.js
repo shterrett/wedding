@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
 
 function dynamicAddRemove(parent, parents, child, children) {
   $('a.' + child + '-add').live('click', function() {
