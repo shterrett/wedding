@@ -1,0 +1,10 @@
+<section class="main">
+	<div class="container">
+		<header>
+			<h1><%= @attendee.name %></h1>
+		</header>
+		<p>Is attending: <%= @attendee.attending ? "Yes" : "No" %></p>
+		<p>Is vegetarian: <%= @attendee.vegetarian ? "Yes" : "No" %></p>
+		<p class="rsvp_message">RSVP message: <br /> <%= @attendee.message %></p>
+	</div>
+</section>

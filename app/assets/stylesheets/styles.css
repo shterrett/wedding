@@ -30,6 +30,18 @@ body {
 	color: rgba(140, 140, 140, 1);
 }
 
+header {
+	margin-bottom: 2%;
+}
+
+hgroup h1 {
+	font-size: 110%;
+}
+
+hgroup h2 {
+	font-size: 95%;
+}
+
 .flash {
 display: block;
 margin: 2% auto;
@@ -217,6 +229,25 @@ font-size: 75%;
 
 aside {
 font-size: 35%;
+}
+
+.attending  a {
+	color: green;
+}
+
+.not_attending a {
+	color: red;
+}
+
+?
+/* Find a picture of broccoli and insert as background for .vegetarian */
+.vegetarian {
+	background-color: green;
+}
+
+.rsvp_message {
+	width: 50%;
+	text-align: left;
 }
 
 /* Media Queries */

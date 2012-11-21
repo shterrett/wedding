@@ -1,8 +1,19 @@
 <section class="main">
 	<div class="container">
 		<header>
-			<h1>List of Attendees</h1>
+			<hgroup>
+				<h1>List of Attendees</h1>
+				<h2>Attending: <%= @number_attending %></h2>
+				<h2>Vegetarians: <%= @number_vegetarian %></h2>
+			</hgroup>
 		</header>
-		
-		<% @attendees.each do |atnd| %>
+		<ul>
+			<% @attendees.each do |atnd| %>
+			<% atnd.attending ? is_atnd = "attending" : is_atnd = "not_attending" %>
+			<% atnd.vegetarian ? is_veg = "vegetarian" : is_veg = ""%>
+			<li class="<%= is_atnd %>"><%= link_to atnd.name, attendee_path(atnd) %><span class="<%= is_veg %>" /></li>
+			<% end %>
+		</ul>
+	</div>
+</section>
 		
