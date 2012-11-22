@@ -1,0 +1,24 @@
+Hi <%= @attendee.name %>,
+
+Thank you for RSVPing to our wedding! 
+<% if @attendee.attending %>
+
+We are looking forward to seeing you. A few things to remember:
+
+The ceremony begins at 10:30 AM on Sunday, 14 April 2013, and will take place at The Pink House in Savannah, GA. Cocktails and lunch will be served following the ceremony. Dress for the event is formal.
+<% if @attendee.vegetarian %>
+
+We have you down for the vegetarian menu option. Please reply with any specific dietary requirements.
+<% else %>
+
+Please let us know if you have any specific dietary requirements. 
+<% end %>
+
+<% else %>
+
+We are very sorry that you will not be able to join us for our wedding, and we hope we will be able to see you soon.
+
+<% end %>
+
+Thank you!
+Kate and Stuart
