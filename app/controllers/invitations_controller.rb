@@ -1,5 +1,5 @@
 class InvitationsController < ApplicationController
-  before_filter :authenticate, only: :new
+  before_filter :authenticate, only: [ :new, :mailing_list ]
   def new
     @invitation = Invitation.create
   end
@@ -27,5 +27,9 @@ class InvitationsController < ApplicationController
   
   def mailing_list
     @invitations = Invitation.where("principal_name IS NOT NULL")
+    respond_to do |format|
+      format.html
+      format.csv { render 'app/views/invitations/mailing_list.csv.erb' }
+    end
   end
 end

@@ -13,4 +13,5 @@ class Invitation < ActiveRecord::Base
       Invitation.where('principal_name IS NOT NULL').order(:principal_name)
     end
   end
+  
 end

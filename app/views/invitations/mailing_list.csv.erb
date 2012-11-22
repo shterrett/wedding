@@ -1,0 +1,4 @@
+honorific,principal_name,street_address,city,state,zip
+<% @invitations.each do |inv| %>
+<%=inv.honorific%>,<%=inv.principal_name%>,<%=inv.street_address%>,<%=inv.city%>,<%=inv.state%>,<%=inv.zip%>
+<% end %>
