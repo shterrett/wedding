@@ -14,9 +14,13 @@ class InvitationsController < ApplicationController
     redirect_path = ( logged_in? ? new_invitation_path : root_path )
     if @invitation.update_attributes(params[:invitation])
       flash[:success] = "Invitation created successfully"
+      unless logged_in?
+        @invitation.attendees.each { |atnd| RsvpMailer.rsvp_success(atnd).deliver }
+        flash[:success] = "You have successfully RSVPd"
+      end
       redirect_to redirect_path
     else
-      flash[:error] = params      
+      flash[:error] = "There was an error; please try again."      
       redirect_to redirect_path
     end
   end

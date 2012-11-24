@@ -32,6 +32,7 @@ function hideImage(){
 
 $().ready( function() {
 	hideAll();
+	$(".flash").fadeIn('fast')
 	$("#when-link").click(function() { showWhen() });
 	$("#where-link").click(function() { showWhere() });
 	$("#how-link").click(function() { showHow() });
