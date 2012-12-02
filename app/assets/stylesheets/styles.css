@@ -367,6 +367,9 @@ z-index: 3;
 		margin: 2% auto;
 		width: 75%;
 	}
+	.dress li {
+	line-height: 200%;
+	}
 }
 
 @media screen and (max-width: 510pt) {
