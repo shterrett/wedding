@@ -254,8 +254,6 @@ font-size: 35%;
 	color: red;
 }
 
-?
-/* Find a picture of broccoli and insert as background for .vegetarian */
 .vegetarian {
 	background-color: green;
 }
@@ -348,3 +346,7 @@ max-width: 85%;
 		margin: 0 auto;
 		padding-bottom: 0;
 	}
+	#xkcdUseless {
+	width: 400px;
+	}
+}
