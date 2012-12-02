@@ -65,6 +65,7 @@ color: rgba(140, 140, 140, 1);
 }
 
 #initial {
+width: 90%;
 margin: 5% auto;
 }
 
@@ -345,8 +346,5 @@ max-width: 85%;
 		float: none;
 		margin: 0 auto;
 		padding-bottom: 0;
-	}
-	#xkcdUseless {
-	width: 400px;
 	}
 }
