@@ -308,6 +308,34 @@ display: block;
 max-width: 85%;
 }
 
+.dress-faq {
+position: relative;
+}
+
+.dress li {
+text-align: left;
+line-height: 135%;
+}
+
+.dress li div {
+line-height: 100%;
+}
+
+.dress aside {
+line-height: 90%;
+}
+
+.answer {
+font-size: 75%;
+}
+
+.answer img {
+position: absolute;
+top: 3%;
+left: 20%;
+z-index: 3;
+}
+
 @media screen and (max-width: 900pt) {
 	#address{
 		display: block;

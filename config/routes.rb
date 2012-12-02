@@ -9,6 +9,7 @@ Wedding::Application.routes.draw do
   
   match 'admin/mailing_list', to: "invitations#mailing_list", as: "mailing_list"
   
+  match 'how/us', to: "static_pages#us", as: "us"
   match 'how/music', to: "static_pages#music", as: "music"
   match 'how/menu', to: "static_pages#menu", as: "menu"
   match 'how/dress', to: "static_pages#dress", as: "dress"

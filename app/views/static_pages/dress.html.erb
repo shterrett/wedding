@@ -1,0 +1,78 @@
+<% content_for :javascript_includes do %>
+<%= javascript_include_tag "dress.js" %>
+<% end %>
+
+<div class="dress">
+<section class="main">
+	<div class="container">
+		<header>
+			<h1>Event Dress</h1>
+		</header>
+		<article>
+			<p>This is a formal event: dress is black-tie. Except, of course that it isn't; almost none of you have black-tie anyway. So we'll just do this piece by piece.
+				<ul>
+					<li>Shoes: Required (unfortunately)
+						<aside>
+							City health code, or some such, requires shoes in restaurants. 						 </aside>
+					</li>
+					<li>Socks: Optional</li>
+					<li>Pants/Dress/Skirt/Kilt: Required. Seriously.</li>
+					<li>Shirts: Also required. Also common sense.</li>
+					<li>Jackets: Optional, but nice.</li>
+					<li>Vests: Optional (extra credit)</li>
+					<li>Ties: Very Optional
+						<aside>
+							You'll be lucky if mine makes it through the ceremony!
+						</aside>
+					</li>
+					<li>Tophats: You're kidding, right?</li>
+					<li>Cloak: Seriously?</li>
+				</ul>
+		</article>
+	</div>
+</section>
+
+<section class="main">
+	<div class="container">
+		<header>
+			<h1>FAQ</h1>
+		</header>
+		<article class="dress-faq">
+			<ul>
+				<li>
+					<a href="#" class="question">What is the anticipated weather?</a>
+					<div class="answer">
+						The anticipated weather in the Pink House is an artifically generated 70&degF-72&degF. For Savannah weather: <a href="http://www.weather.com/weather/wxclimatology/monthly/graph/USGA0506">click here</a>	
+					</div>
+				</li>
+				<li>
+					<a href="#" class="question">Does any of the wedding take place outdoors?</a>
+					<div class="answer">
+						Not unless you count walking from your parked car to the restaurant. The entire event is indoors because we don't trust Savannah's weather. However, you may avail yourselves of the many outdoor activites in the area before and/or after the wedding.
+					</div>
+				</li>
+				<li>
+					<a href="#" class="question">Why are shoes "unfortunately" required?</a>
+					<div class="answer">
+						I'm glad you <a href="http://barefootrunning.fas.harvard.edu/4BiomechanicsofFootStrike.html">asked</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="question">Can I come in costume?</a>
+					<div class="answer">
+						Only if your costume is appropriate both in it's universe and our universe for a formal ceremony. You can show up in <a href="#" id="bsg-dress-link">Battlestar: Galactica dress greys</a>, but not dressed as a <a href="#" id="gorn-link">Gorn</a>. 
+						<%= image_tag "bsg-dress.jpeg", id: "bsg-dress" %>
+						<%= image_tag "gorn.jpg", id: "gorn" %>	
+					</div>
+				</li>
+				<li>
+					<a href="#" class="question">Why aren't you having a Betazoid wedding? Dress would be much simpler</a>
+					<div class="answer">
+						We don't want to get arrested. 
+					</div>
+				</li>
+			</ul>
+		</article>
+	</div>
+</section>
+</div>
