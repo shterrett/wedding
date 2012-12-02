@@ -8,7 +8,7 @@ function hideImage(){
 
 $().ready( function() {
 	hideAll();
-	$(".main-nav>a").click(function(e){
+	$(".js-link>a").click(function(e){
 		e.preventDefault();
 		hideImage();
 		hideAll();
