@@ -295,6 +295,12 @@ font-size: 45%;
 	width: 5em;
 }
 
+.music img {
+margin: 2% auto;
+display: block;
+max-width: 85%;
+}
+
 .dress li {
 text-align: left;
 margin: 3%;
@@ -318,21 +324,13 @@ z-index: 3;
 }
 
 /* Media Queries */
-@media screen and (max-width: 1120pt) {
+@media screen and (max-width: 840pt) {
 	#month {
 		float: right;
 	}
 }
 
-.music img {
-margin: 2% auto;
-display: block;
-max-width: 85%;
-}
-
-
-
-@media screen and (max-width: 900pt) {
+@media screen and (max-width: 675pt) {
 	#address{
 		display: block;
 		float: none;
@@ -353,7 +351,7 @@ max-width: 85%;
 	}
 }
 
-@media screen and (max-width: 670pt) {
+@media screen and (max-width: 500pt) {
 	iframe{
 		display: none;
 	}
@@ -365,7 +363,7 @@ max-width: 85%;
 	}
 }
 
-@media screen and (max-width: 510pt) {
+@media screen and (max-width: 380pt) {
 	.name {
 		display: block;
 		float: none;
