@@ -15,7 +15,7 @@
 /tmp
 
 # mail password config
-mailer.rb
+config/initializers/mailer.rb
 
 # admin password config
-admin.rb
+config/initializers/admin.rb
