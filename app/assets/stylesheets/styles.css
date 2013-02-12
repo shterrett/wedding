@@ -214,6 +214,11 @@ padding: 0;
 margin: 4% auto;
 }
 
+#registry aside {
+margin-bottom: 2%;
+font-size: 50%;
+}
+
 iframe {
 width: 95%;
 min-height: 250%;
@@ -293,6 +298,31 @@ font-size: 45%;
 
 .mailing-list tr td:nth-child(5) {
 	width: 5em;
+}
+
+#hotels .container>header h1 {
+font-size: 200%;}
+
+#hotels ul {
+margin: 0 auto;
+}
+
+#hotels li {
+border: 2px solid grey;
+display: inline-block;
+margin: 2%;
+padding: 1%;
+}
+
+#hotels li strong {
+font-weight: 800;
+line-height: 1.5em;
+text-transform: uppercase;
+}
+
+#hotels li div {
+margin: 1%;
+font-size: 80%;
 }
 
 .music img {
