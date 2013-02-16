@@ -1,3 +1,7 @@
+<% content_for :javascript_includes do %>
+<%= javascript_include_tag "hotels.js" %>
+<% end %>
+
 <section class="main" id="hotels">
 	<div class="container">
 		<header>
@@ -8,18 +12,61 @@
 				<h1>Reserved Blocks</h1>
 			</header>
 			<ul>
-				<li>
-					<strong>Marriot</strong>
-					<div>Street Address <br /> City/State/Zip</div>
-					<div>Price</div>
-				</li>
-				<li>
-					<strong>Holiday Inn Express</strong>
-					<div>199 East Bay Street <br /> Savannah, GA 31401</div>
+				<li id="hotel-1">
+					<strong>Residence Inn</strong>
+					<div>
+						<a href="http://goo.gl/maps/12UgJ">map</a>
+					</div>
 					<div>$200/night</div>
+				</li>
+				<li id="hotel-2">
+					<strong>Holiday Inn Express</strong>
+					<div>
+						<a href="http://goo.gl/maps/I939T">map</a>
+					</div>
+					<div>$200/night</div>
+				</li>
+				<li id="hotel-3">
+					<strong>Hilton Garden Inn - Airport</strong>
+					<div>
+						<a href="http://goo.gl/maps/bwaJT">map</a>
+					</div>
+					<div>$103/night</div>
+				</li>
+				<li id="hotel-4">
+					<strong>Hilton Garden Inn - Midtown</strong>
+					<div>
+						<a href="http://goo.gl/maps/sOQuc">map</a>
+					</div>
+					<div>$130/night</div>
 				</li>
 				<div class="clear"></div>
 			</ul>
 		</section>
 	</div>
+	
+	<div id="hotel-detail-1" class="container hotel-detail">
+		<strong><a href="http://cwp.marriott.com/savdv/gasawayterrettwedding">Residence Inn</a></strong>
+		<div>500 W Charlton St<br /> Savannah, GA 31401</div>
+		<p>Please use the link above or call 912-233-9996 or 800-331-3131 and mention your affiliation with our wedding.</p>
+	</div>
+	
+	<div id="hotel-detail-2" class="container hotel-detail">
+		<strong><a href="http://www.reservationcounter.com/hotels/show/264692/holiday-inn-express-historic-district/?TID=s44brS42o|pcrid|16306852994&utm_source=google&utm_medium=cpc&utm_term=%2Bholiday%20%2Binn%20%2Bexpress%20%2Bhistoric%20%2Bdistrict%20%2Bsavannah&utm_campaign=Hotel%20Chain%20H&mm_campaign=61e23501c3a7666376c173fa44c75e69&keyword=%2Bholiday%20%2Binn%20%2Bexpress%20%2Bhistoric%20%2Bdistrict%20%2Bsavannah&hotelid=264692">Holidy Inn Express</a></strong>
+		<div>199 East Bay Street <br /> Savannah, GA 31401</div>
+		<p>Please make reservations by 12 March by calling 912-231-9000 and mentioning your affiliation with our wedding.</p>
+	</div>
+	
+	<div id="hotel-detail-3" class="container hotel-detail">
+		<strong><a href="http://hiltongardeninn3.hilton.com/en/hotels/georgia/hilton-garden-inn-savannah-airport-SAVAHGI/index.html?WT.mc_id=EPEMGIResconfEN">Hilton Garden Inn - Airport</a></strong>
+		<div>80 Clyde E. Martin Drive <br />Savannah, GA 31408</div>
+		<p>Reservations must be made by 20 March. Please contact the hotel directly and mention your affiliation with our wedding.</p>
+	</div>
+	
+	<div id="hotel-detail-4" class="container hotel-detail">
+		<strong><a href="http://hiltongardeninn3.hilton.com/en/hotels/georgia/hilton-garden-inn-savannah-midtown-SAVMTGI/index.html?WT.mc_id=EPEMGIResconfEN">Hilton Garden Inn - Midtown</a></strong>
+		<div>5711 Abercorn St. <br />Savannah, GA 31405</div>
+		<p>Reservations must be made by 20 March. Please contact the hotel directly and mention your affiliation with our wedding.</p>
+	</div>
+	
 </section>

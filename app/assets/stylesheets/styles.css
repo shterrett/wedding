@@ -308,14 +308,17 @@ margin: 0 auto;
 }
 
 #hotels li {
+min-width: 250pt;
 border: 2px solid grey;
 display: inline-block;
 margin: 2%;
 padding: 1%;
+cursor: pointer;
 }
 
 #hotels li strong {
 font-weight: 800;
+text-shadow: -2px -2px grey;
 line-height: 1.5em;
 text-transform: uppercase;
 }
@@ -323,6 +326,25 @@ text-transform: uppercase;
 #hotels li div {
 margin: 1%;
 font-size: 80%;
+}
+
+.hotel-detail {
+margin: 3% auto;
+padding: 2%;
+width: 60%;
+}
+
+.hotel-detail strong {
+display: inline-block;
+margin-bottom: 2%;
+}
+
+.hotel-detail div {
+margin: 1.5%;
+}
+
+.hotel-detail p {
+width: 65%;
 }
 
 .music img {
@@ -390,6 +412,9 @@ z-index: 3;
 		float: none;
 		margin: 2% auto;
 		width: 75%;
+	}	
+	#hotels li {
+		min-width: 225pt;
 	}
 }
 
