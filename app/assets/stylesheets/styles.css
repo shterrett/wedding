@@ -308,7 +308,7 @@ margin: 0 auto;
 }
 
 #hotels li {
-min-width: 250pt;
+width: 260pt;
 border: 2px solid grey;
 display: inline-block;
 margin: 2%;
@@ -414,7 +414,7 @@ z-index: 3;
 		width: 75%;
 	}	
 	#hotels li {
-		min-width: 225pt;
+		width: 90%;
 	}
 }
 
@@ -429,8 +429,7 @@ z-index: 3;
 	margin: 5%;
 	}
 	#hotels li {
-	min-width: 95%;
-	max-width: 95%;
+	width: 90%;
 	}
 	#hotels li strong {
 	font-size: 80%;
