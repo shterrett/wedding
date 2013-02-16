@@ -318,7 +318,7 @@ cursor: pointer;
 
 #hotels li strong {
 font-weight: 800;
-text-shadow: -2px -2px grey;
+text-shadow: -1.5px -1.5px grey;
 line-height: 1.5em;
 text-transform: uppercase;
 }
@@ -427,5 +427,11 @@ z-index: 3;
 	}
 	.dress li {
 	margin: 5%;
+	}
+	#hotels li {
+	min-width: 185pt;
+	}
+	#hotels li strong {
+	font-size: 80%;
 	}
 }
