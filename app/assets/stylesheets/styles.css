@@ -429,7 +429,7 @@ z-index: 3;
 	margin: 5%;
 	}
 	#hotels li {
-	min-width: 0pt;
+	min-width: 95%;
 	max-width: 95%;
 	}
 	#hotels li strong {
