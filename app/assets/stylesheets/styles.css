@@ -305,10 +305,12 @@ font-size: 200%;}
 
 #hotels ul {
 margin: 0 auto;
+max-width: 1296px;
 }
 
 #hotels li {
 width: 260pt;
+height: 100pt;
 border: 2px solid grey;
 display: inline-block;
 margin: 2%;
