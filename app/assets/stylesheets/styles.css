@@ -429,7 +429,8 @@ z-index: 3;
 	margin: 5%;
 	}
 	#hotels li {
-	min-width: 185pt;
+	min-width: 0pt;
+	max-width: 95%;
 	}
 	#hotels li strong {
 	font-size: 80%;
