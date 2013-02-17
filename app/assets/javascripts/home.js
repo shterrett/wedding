@@ -14,5 +14,7 @@ $().ready( function() {
 		hideAll();
 		var section_id = "#" + $(this).attr('id').replace('-link', '');
 		$(section_id).slideDown('slow').addClass("active");		
-	});
+	})
+	var clicked_button = ".main-nav a[href=\'/" + window.location.hash +"\']"
+	$(clicked_button).click();
 });

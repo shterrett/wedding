@@ -418,6 +418,9 @@ z-index: 3;
 	#hotels li {
 		width: 90%;
 	}
+	#hotels li strong {
+		text-decoration: underline;
+	}
 }
 
 @media screen and (max-width: 380pt) {
