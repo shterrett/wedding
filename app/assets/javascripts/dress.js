@@ -6,7 +6,7 @@ $(document).ready(function() {
 		$('.answer').slideUp();
 		$(this).next().slideDown();
 	});
-	$('.answer>a').hover(function(e){
+	$('.answer>span').hover(function(e){
 		var selector = "#" + $(this).attr("id").replace("-link", "");
 		$(selector).fadeToggle();
 	});

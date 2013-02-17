@@ -370,6 +370,11 @@ line-height: 90%;
 font-size: 75%;
 }
 
+.answer>span {
+cursor:pointer;
+text-decoration: underline;
+}
+
 .answer img {
 position: absolute;
 top: 0%;
