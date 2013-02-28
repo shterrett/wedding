@@ -13,21 +13,13 @@
 <body>
   <header class="main-header">
     <%= render "shared/header" %>
-    <%= render "shared/nav" %>
   </header>
-	<section class="flash">
-		<% if flash[:error] -%>
-		  <p class='error'><%=h flash[:error] %></p>
-		<% end %>
-		<% if flash[:notice] %>
-		  <p class='notice'><%=h flash[:notice] %></p>
-		<% end %>
-		<% if flash[:success] %>
-		  <p class='success'><%=h flash[:success] %></p>
-		<% end -%>
-	</section>
+
+
 	
   <%= yield %>
+
+  <%= link_to "Home", root_path, id: "home-link" %>
 
 </body>
 </html>

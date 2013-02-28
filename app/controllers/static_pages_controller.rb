@@ -17,4 +17,8 @@ class StaticPagesController < ApplicationController
   
   def us
   end
+  
+  def program
+    render "program", layout: "program_layout"
+  end
 end

@@ -14,6 +14,7 @@ Wedding::Application.routes.draw do
   match 'how/menu', to: "static_pages#menu", as: "menu"
   match 'how/dress', to: "static_pages#dress", as: "dress"
   match 'how/hotels', to: "static_pages#hotels", as: "hotels"
+  match '/program', to: "static_pages#program", as: "program"
   match 'admin', to: "static_pages#admin", as: "admin"
   
   root to: "static_pages#home"

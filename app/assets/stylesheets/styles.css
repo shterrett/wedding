@@ -382,6 +382,61 @@ right: 5%;
 z-index: 3;
 }
 
+#program header {
+  text-align: center;
+  margin: 1% auto; 
+}
+
+#program > header > h1 {
+  font-size: 175%;
+}
+.program-container {
+  width: 75%;
+  margin: 2% auto;
+  padding: 0 2%;
+}
+
+.program-container h1 {
+  text-align: left;
+  font-size: 150%;
+}
+
+.program-container time {
+  font-size: 75%;
+}
+
+.program-container ol li {
+  text-align: center;
+  font-size: 125%;
+  position: relative;
+}
+
+.program-container ol li ul {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.program-container ol li ul li {
+  font-size: 60%;
+  text-align: left;
+}
+
+.program-container aside {
+  font-size: 50%;
+  width: 40%;
+  display: inline-block;
+  position: absolute;
+  top: 0.75em;
+}
+
+#home-link {
+  display: block;
+  padding: 5%;
+  margin:2% auto;
+  text-align: center;
+  width: 150px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 840pt) {
 	#month {
