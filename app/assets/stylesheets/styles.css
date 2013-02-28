@@ -442,6 +442,11 @@ z-index: 3;
 	#month {
 		float: right;
 	}
+  #how .main-nav a:last-child {
+    width: 50%;
+    margin: 5% auto 0;
+    display:block;
+  }
 }
 
 @media screen and (max-width: 675pt) {
@@ -449,6 +454,7 @@ z-index: 3;
 		display: block;
 		float: none;
 	}
+
 	#where img {
 		float: none;
 		display: block;
@@ -469,12 +475,13 @@ z-index: 3;
 	iframe{
 		display: none;
 	}
-	#how a, .main-nav a {
+	#how a, .main-nav a, #how .main-nav a:last-child {
 		display: block;
 		float: none;
 		margin: 2% auto;
 		width: 75%;
 	}	
+
 	#hotels li {
 		width: 90%;
 	}

@@ -10,4 +10,9 @@ class RsvpMailer < ActionMailer::Base
     @attendee = attendee
     mail to: attendee.email, subject: "You have successfully RSVPd"
   end
+  
+  def contact_us(contact_form)
+    @contact_form = contact_form
+    mail to: 'wedding@tworingstorulethemall.com', subject: "Website Contact Form", reply_to: contact_form.email
+  end
 end
