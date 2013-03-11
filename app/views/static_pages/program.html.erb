@@ -1,7 +1,10 @@
+<%= javascript_include_tag "program.js" %>
 <section id="program">
   <header>
     <h1>Order of Ceremonies</h1>
   </header>
+  <section id="warning">
+  </section>
   <section class="program-container">
     <section>
       <header>
@@ -12,8 +15,7 @@
         <li><%= link_to "Prelude", "/how/music" %>
           <ul>
             <li>Gabrieli: Canzon per sonare #2</li>
-            <li>Calvert: Suite from the Monteregion Hills</li>
-            <li>Bach: Contrapunctus IX</li>
+            <li>Bozza: Sonatine</li>
             <li>Arutunian: Armenian Scenes</li>
           </ul>
         </li>
@@ -31,7 +33,6 @@
         <time datetime="2013-04-14 11:30">11:30 AM</time>
       </header>
       <ol>
-        <li><%= link_to "String Quartets", "/how/music" %></li>
         <li>Drinks</li>
         <li>Socializing<aside>Try to talk to someone you don't already know</aside></li>
       </ol>
