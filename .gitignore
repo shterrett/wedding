@@ -18,4 +18,5 @@
 config/initializers/mailer.rb
 
 # admin password config
+config/initializers/dev_credentials.rb
 config/initializers/admin.rb

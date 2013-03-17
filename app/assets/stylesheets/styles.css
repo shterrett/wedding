@@ -392,6 +392,7 @@ z-index: 3;
 }
 .program-container {
   width: 75%;
+  max-width: 450px;
   margin: 2% auto;
   padding: 0 2%;
 }

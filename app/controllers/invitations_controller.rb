@@ -15,7 +15,9 @@ class InvitationsController < ApplicationController
     if @invitation.update_attributes(params[:invitation])
       flash[:success] = "Invitation created successfully"
       unless logged_in?
-        @invitation.attendees.each { |atnd| RsvpMailer.rsvp_success(atnd).deliver }
+        @invitation.attendees.each do |atnd| 
+          RsvpMailer.rsvp_success(atnd).deliver unless atnd.email.blank?
+        end
         flash[:success] = "You have successfully RSVPd"
       end
       redirect_to redirect_path
