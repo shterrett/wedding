@@ -21,4 +21,9 @@ class StaticPagesController < ApplicationController
   def program
     render "program", layout: "program_layout"
   end
+  
+  def references 
+    render "references", layout: "program_layout"
+  end
+  
 end

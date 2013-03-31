@@ -20,11 +20,18 @@
           </ul>
         </li>
         <li>Welcome</li>
-        <li>Readings</li>
+        <li>Readings<aside><%= link_to "Quotes and references", references_path %></aside></li>
+        <li>Make Our Garden Grow
+          <div>From Bernstein's Candide</div>
+        </li>
         <li>Vows</li>
         <li>Rings</li>
         <li>Kiss</li>
-        <li><%= link_to "Postlude", "/how/music" %></li>
+        <li><%= link_to "Postlude", "/how/music" %>
+          <ul>
+            <li>Bach: Contrapunctus IX</li>
+          </ul>
+        </li>
       </ol>
     </section>
     <section>
@@ -33,6 +40,7 @@
         <time datetime="2013-04-14 11:30">11:30 AM</time>
       </header>
       <ol>
+        <li><%= link_to "String Quartet", "/how/music" %></li>
         <li>Drinks</li>
         <li>Socializing<aside>Try to talk to someone you don't already know</aside></li>
       </ol>
@@ -43,7 +51,7 @@
         <time datetime="2013-04-14 12:30">12:30 PM</time>
       </header>
       <ol>
-        <li>Seats are assigned</li>
+        <li>Open seating <aside>A table is reserved for the wedding party</aside></li>
         <li><%= link_to "Lunch will be served", "/how/menu" %></li>
         <li>Speeches and such</li>
       </ol>
