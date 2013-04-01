@@ -431,7 +431,8 @@ z-index: 3;
   width: 40%;
   display: inline-block;
   position: absolute;
-  top: 0.75em;
+  top: 0.3em;
+  
 }
 
 #warning {
