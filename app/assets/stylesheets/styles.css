@@ -518,6 +518,29 @@ z-index: 3;
   margin-top: 5%;
 }
 
+.menu h2 {
+  font-size: 75%;
+  font-weight: normal;
+}
+
+.menu article {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.menu article ul {
+  list-style: disc;
+  width: 50%;
+  margin: 0 auto 3% auto;
+}
+
+.menu article li {
+  display: list-item;
+  margin: 3% auto;
+  font-size: 85%;
+  text-align: left;
+}
+
 #dessert #back-cake {
   display: none;
 }
@@ -590,6 +613,10 @@ z-index: 3;
 	#hotels li strong {
 		text-decoration: underline;
 	}
+  
+  .menu article ul {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 380pt) {
@@ -608,4 +635,8 @@ z-index: 3;
 	#hotels li strong {
 	font-size: 80%;
 	}
+  
+  .menu article ul {
+    width: 100%;
+  }
 }
