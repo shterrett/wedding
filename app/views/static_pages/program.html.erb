@@ -12,7 +12,7 @@
         <time datetime="2013-04-14 10:30">10:30 AM</time>
       </header>
       <ol>
-        <li><%= link_to "Prelude", "/how/music" %>
+        <li><%= link_to "Prelude", music_path %>
           <ul>
             <li>Gabrieli: Canzon per sonare #2</li>
             <li>Bozza: Sonatine</li>
@@ -21,13 +21,13 @@
         </li>
         <li>Welcome</li>
         <li>Readings<aside><%= link_to "References", references_path %></aside></li>
-        <li>Make Our Garden Grow
+        <li><%= link_to "Make Our Garden Grow", music_path %>
           <div>From Bernstein's Candide</div>
         </li>
         <li>Vows</li>
         <li>Rings</li>
         <li>Kiss</li>
-        <li><%= link_to "Postlude", "/how/music" %>
+        <li><%= link_to "Postlude", music_path %>
           <ul>
             <li>Bach: Contrapunctus IX</li>
           </ul>
@@ -40,7 +40,7 @@
         <time datetime="2013-04-14 11:30">11:30 AM</time>
       </header>
       <ol>
-        <li><%= link_to "String Quartet", "/how/music" %></li>
+        <li><%= link_to "String Quartet", music_path %></li>
         <li>Drinks</li>
         <li>Socializing<aside>Try to talk to someone you don't already know</aside></li>
       </ol>
@@ -52,13 +52,13 @@
       </header>
       <ol>
         <li>Open seating <aside>A table is reserved for the wedding party</aside></li>
-        <li><%= link_to "Lunch will be served", "/how/menu" %></li>
+        <li><%= link_to "Lunch will be served", menu_path %></li>
         <li>Speeches and such</li>
       </ol>
     </section>
     <section>
       <header>
-        <h1>End</h1>
+        <h1><%= link_to "End", "http://youtu.be/ojydNb3Lrrs?t=1m22s", target: "_blank" %></h1>
         <time datetime="2013-04-14 15:30">3:30 PM</time>
       </header>
       <ol>
