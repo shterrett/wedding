@@ -1,0 +1,9 @@
+<div class="pictures">
+<section class="main">
+	<div class="container">
+    <% @pictures.each do |picture| %>
+      <img src="<%= picture.url %>" title="<%= picture.title %>" />
+    <% end %>
+  </div>
+</section>
+</div>

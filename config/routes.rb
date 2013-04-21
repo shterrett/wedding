@@ -18,6 +18,7 @@ Wedding::Application.routes.draw do
   match '/program', to: "static_pages#program", as: "program"
   match '/program/references', to: "static_pages#references", as: "references"
   match 'admin', to: "static_pages#admin", as: "admin"
+  match 'pictures', to: "static_pages#pictures", as: "pictures"  
   
   root to: "static_pages#home"
 
