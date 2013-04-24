@@ -562,6 +562,10 @@ z-index: 3;
   max-width: 400px;
 }
 
+.pictures .container {
+  padding: 2%;
+}
+
 /* Media Queries */
 @media screen and (max-width: 840pt) {
 	#month {
@@ -571,6 +575,12 @@ z-index: 3;
     width: 50%;
     margin: 5% auto 0;
     display:block;
+  }
+  .pictures img {
+    max-width: 90%;
+  }
+  .pictures .container {
+    width: 90%;
   }
 }
 
