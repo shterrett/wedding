@@ -6,6 +6,10 @@ Wedding::Application.routes.draw do
   resources :invitations do
     resources :attendees
   end
+  namespace :admin do
+    resources :invitations
+  end
+  
   resources :contact_us
   
   match 'admin/mailing_list', to: "invitations#mailing_list", as: "mailing_list"
