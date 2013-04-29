@@ -8,6 +8,7 @@ gem 'rails', '3.2.11'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'capybara'
 end
 group :production do
   gem 'pg', '0.12.2'
