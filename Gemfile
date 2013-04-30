@@ -9,6 +9,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'factory_girl'
 end
 group :production do
   gem 'pg', '0.12.2'

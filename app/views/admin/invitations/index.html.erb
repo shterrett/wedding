@@ -1,0 +1,12 @@
+<section class="main">
+	<div class="container">
+    <header>
+      <h1>All Invitations</h1>
+    </header>
+    <ul>
+      <%= @invitations.each do |inv| %>
+      <li><%= inv.principal_name %></li>
+      <% end %>
+    </ul>
+  </div>
+</section>
