@@ -1,0 +1,9 @@
+<ul id="invitation-list">
+	<% if invitations.empty? %>
+		<li>No records found</li>
+	<% else %>
+		<% invitations.each do |inv| %>
+		<li><%= link_to inv.principal_name, invitation_path(inv) %></li>
+		<% end%>
+	<% end %>
+</ul>

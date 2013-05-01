@@ -3,8 +3,10 @@
     <header>
       <h1>All Invitations</h1>
     </header>
+    <div>
+      <%= render "shared/invitations_search" %>
     <ul>
-      <%= @invitations.each do |inv| %>
+      <% @invitations.each do |inv| %>
       <li><%= link_to inv.principal_name, admin_invitation_path(inv) %></li>
       <% end %>
     </ul>

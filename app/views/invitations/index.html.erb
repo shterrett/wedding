@@ -6,25 +6,12 @@
 		<p>
 			Please use the name on the front of the envelope to find your invitation. Keep in mind that your invitation can be associated with multiple people; however, only the name in the address block of the envelope is indexed here.
 		</p>
-		<%= form_tag invitations_path, method: :get do %>
-		<p>
-			<%= text_field_tag :search, params[:search] %>
-			<%= submit_tag "Search", name: nil %>
-		</p>
-		<% end %>
+    <%= render 'shared/invitations_search' %>
 	</div>
 </section>
 	
 <section class="main">
 	<div class="container">
-		<ul id="invitation-list">
-			<% if @invitations.empty? %>
-				<li>No records found</li>
-			<% else %>
-				<% @invitations.each do |inv| %>
-				<li><%= link_to inv.principal_name, invitation_path(inv) %></li>
-				<% end%>
-			<% end %>
-		</ul>
+		<%= render 'shared/invitations', invitations: @invitations%>
 	</div>
 </section>
