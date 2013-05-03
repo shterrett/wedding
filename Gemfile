@@ -10,6 +10,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'factory_girl'
+  gem 'faker'
 end
 group :production do
   gem 'pg', '0.12.2'
