@@ -1,0 +1,29 @@
+<%= form_for [:admin, invitation] do |f| %>
+  
+  <label><strong>Honorific</strong>
+    <%= f.text_field :honorific %>
+  </label>
+  
+  <label><strong>Principal Name</strong>
+    <%= f.text_field :principal_name %>
+  </label>
+  
+  <label><strong>Street Address</strong>
+    <%= f.text_field :street_address %>
+  </label>
+  
+  <label><strong>City</strong>
+    <%= f.text_field :city %>
+  </label>
+  
+  <label><strong>State</strong>
+    <%= f.text_field :state %>
+  </label>
+  
+  <label><strong>Zip</strong>
+    <%= f.number_field :zip %>
+  </label>
+  
+  <%= f.submit %>
+  
+<% end%>

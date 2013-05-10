@@ -3,5 +3,19 @@
     <header>
       <h1><%= @invitation.principal_name %></h1>
     </header>
+    <%= link_to "Edit", edit_admin_invitation_path(@invitation)%>
+    <%= link_to "Back to Index", admin_invitations_path %>
+    <label><strong>Principal Name</strong>
+      <%= "#{@invitation.honorific} #{@invitation.principal_name}" %>
+    </label>
+    <label><strong>Street Address</strong>
+      <%= @invitation.street_address %>
+    </label>
+    <label><strong>City, State</strong>
+      <%= "#{@invitation.city}, #{@invitation.state}" %>
+    </label>
+    <label><strong>Zip</strong>
+      <%= @invitation.zip %>
+    </label>
   </div>
 </section>
